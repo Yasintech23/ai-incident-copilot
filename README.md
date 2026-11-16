@@ -1,5 +1,7 @@
 # AI Incident Copilot
 
+![Tests](https://github.com/Yasintech23/ai-incident-copilot/actions/workflows/tests.yml/badge.svg)
+
 AI Incident Copilot is a Python security tool that analyzes Linux log files and detects suspicious activity.
 It currently reads SSH login attempts from `auth.log` and counts failed login attempts per IP address.
 If an IP address has 3 or more failed attempts, it is flagged as a possible brute force attack.
@@ -31,7 +33,7 @@ python3 -m pytest -v
 ## Roadmap
 1. Log parser without AI ✅
 2. Tests with pytest ✅
-3. Automated tests with GitHub Actions
+3. Automated tests with GitHub Actions ✅
 4. Detect more attack patterns (e.g. successful login after brute force)
 5. AI that explains incidents and suggests actions
 6. Deployment on Azure with CI/CD
